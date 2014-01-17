@@ -1,4 +1,4 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 Name:           objectweb-pom
 Version:        1.5
 Release:        1.0%{?dist}
@@ -17,6 +17,7 @@ This package provides Objectweb parent POM used by different
 Objectweb packages.
 
 %prep
+%setup -T -c %{name}
 cp -p %{SOURCE0} pom.xml
 cp -p %{SOURCE1} LICENSE
 
@@ -28,3 +29,7 @@ cp -p %{SOURCE1} LICENSE
 
 %files -f .mfiles
 %doc LICENSE
+
+%changelog
+* Tue Dec  3 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 1.5-1
+- Initial packaging
