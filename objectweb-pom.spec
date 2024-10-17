@@ -5,7 +5,7 @@ Release:        1.0%{?dist}
 Summary:        Objectweb POM
 BuildArch:      noarch
 License:        ASL 2.0
-URL:            http://gitorious.ow2.org/ow2/pom/
+URL:            https://gitorious.ow2.org/ow2/pom/
 Source0:        http://repo.maven.apache.org/maven2/org/ow2/ow2/%{version}/ow2-%{version}.pom
 Source1:        http://www.apache.org/licenses/LICENSE-2.0.txt
 
