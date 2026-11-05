@@ -3,6 +3,9 @@ Version:        3.0.0
 Release:        1
 Summary:        Objectweb POM
 BuildArch:      noarch
+# Literal, so the first rpmbuild -bs records them before sysjar is installed.
+BuildRequires:	maven
+BuildRequires:	java-current-devel
 BuildSystem:	maven
 BuildOption:	validate
 License:        ASL 2.0
